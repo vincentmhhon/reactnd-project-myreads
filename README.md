@@ -1,8 +1,7 @@
-This is the starter template for the final assessment project for Udacity's React Fundamentals course, developed by [React Training](https://reacttraining.com). The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+This is project is the final assessment project for Udacity's React Fundamentals course, it is based the starter template developed by [React Training](https://reacttraining.com). 
+The template only provide a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. 
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
-
-## What You're Getting
+## What include in starting template
 ```
 +--public/    
  |-- index.html - DO NOT MODIFY
@@ -33,7 +32,7 @@ Remember that good React design practice is to create new JS files for each comp
 
 ## Backend Server
 
-To simplify your development process, we've provided a backend server for you to develop against. The provided file [`BooksAPI.js`](src/BooksAPI.js) contains the methods you will need to perform necessary operations on the backend:
+To simplify our development process, React Training has provided a backend server for you to develop against. The provided file [`BooksAPI.js`](src/BooksAPI.js) contains the methods we will need to perform necessary operations on the backend:
 
 ### `getAll()`
 * Returns a Promise which resolves to a JSON object containing a collection of book objects.
@@ -59,6 +58,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+This repository is my project codes. Therefore, I most likely will not accept pull requests.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
