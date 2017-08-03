@@ -1,3 +1,4 @@
+## Introduction
 This is project is the final assessment project for Udacity's React Fundamentals course, it is based the starter template developed by [React Training](https://reacttraining.com). 
 The template only provide a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. 
 
@@ -29,6 +30,13 @@ for you to use with your app.
 ```
 
 Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
+
+# Local install
+npm install
+
+# Local launch
+npm start
+The app will be shown at http://localhost:3000/ in browser window
 
 ## Backend Server
 
