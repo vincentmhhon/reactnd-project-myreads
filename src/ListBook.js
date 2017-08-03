@@ -12,13 +12,10 @@ class ListBook extends Component {
   render() {
     const { books } = this.props
     let currentlyReadingBooks, wantToReadBooks, readBooks
-     console.log(books)
     currentlyReadingBooks = books.filter((book) => book.shelf === "currentlyReading")
     wantToReadBooks = books.filter((book) => book.shelf === "wantToRead")
     readBooks = books.filter((book) => book.shelf === "read")
-    console.log(currentlyReadingBooks)
-      console.log(wantToReadBooks)
-        console.log(readBooks)
+
     return (
       <div className="list-books">
         <div className="list-books-title">
@@ -29,14 +26,17 @@ class ListBook extends Component {
             <BookShelf 
               title="Currently Reading"
               books={currentlyReadingBooks}
+              onUpdateBook={this.props.onUpdateBook}
             />
             <BookShelf 
               title="Want to Read"
               books={wantToReadBooks}
+              onUpdateBook={this.props.onUpdateBook}
             />
             <BookShelf 
               title="Read"
               books={readBooks}
+              onUpdateBook={this.props.onUpdateBook}
             />
           </div>
         </div>
