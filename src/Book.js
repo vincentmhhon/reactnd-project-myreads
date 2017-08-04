@@ -7,6 +7,7 @@ class Book extends Component {
     book: PropTypes.array.isRequired
   }
   handleShelfChange = (book, e) => {
+    e.preventDefault()
     if (this.props.onUpdateBook) {
       console.log(book)
       this.props.onUpdateBook(book, e.target.value)

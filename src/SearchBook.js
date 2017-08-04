@@ -13,8 +13,9 @@ class SearchBook extends Component {
   search = (query) => {
     BooksAPI.search(query).then(
       (showBooks) => {
-         this.setState({showBooks: showBooks})
-         this.setState({ query: query.trim() })
+        const savedBooks = this.props.savedBooks
+        this.setState({showBooks: showBooks})
+        this.setState({ query: query.trim() })
       }
     )    
   }
