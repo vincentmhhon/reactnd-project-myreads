@@ -12,8 +12,12 @@ class SearchBook extends Component {
 
   search = (query) => {
     BooksAPI.search(query).then(
-      (showBooks) => {
+      (books) => {
         const savedBooks = this.props.savedBooks
+        let showBooks = books.map((book) => {
+           let temp = savedBooks.filter((savedBook) => book.id === savedBook.id)[0]
+           return (temp)? temp: book
+        })
         this.setState({showBooks: showBooks})
         this.setState({ query: query.trim() })
       }
